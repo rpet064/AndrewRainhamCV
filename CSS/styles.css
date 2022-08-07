@@ -1,0 +1,125 @@
+/* HTML Elements */
+
+body{
+  background-color: #1597E5;
+  text-align: center;
+  font-family: "Ubuntu";
+  position: relative;
+  z-index: -1
+}
+
+h1, h2, h3{
+  padding-bottom: 5%;
+  font-family: "EB Garamond";
+  font-size: 3rem;
+
+/* Headings */
+
+}
+
+.big-heading{
+  font-size: 4.5rem;
+  color: #FEF9EF;
+}
+
+.small-heading{
+  font-size: 2rem;
+  color: #FEF9EF;
+}
+
+.small-button{
+  font-size: 2rem;
+  color: #072227;
+  margin: 1%;
+}
+
+/* General Properties */
+
+.container-fluid{
+  padding: 5% 10%;
+}
+
+.white-section{
+  background-color:#FEF9EF;
+}
+
+.dark-section{
+  background-color: #3D56B2;
+  color: #FEF9EF;
+}
+
+.col-lg-6{
+  padding: 2% 7.5% 2% 7.5%;
+}
+
+/* Navigation Bar */
+
+.navbar-brand{
+  padding: 3%;
+
+}
+
+/* Introdction */
+
+#introduction {
+  background-color: white;
+  color: black;
+}
+
+#introduction p, #introduction h1, #introduction h2, #introduction a {
+  color: black;
+}
+
+#map-icon{
+  padding-right: 3%;
+}
+
+.img-title{
+  padding: 5%;
+  border-radius: 50%;
+  width: 90%;
+}
+
+@media (min-width: 1000px){
+  .img-title {
+  width: 130%;
+  }
+}
+
+
+/* About Me */
+
+#about-me p, #about-me p, #about-me p, #about-me p {
+
+}
+
+.me-p{
+  padding-bottom: 7%;
+}
+
+/* Call to Action */
+
+.btn{
+  margin-top: 3%;
+}
+
+/* Footer */
+
+#footer{
+  font-size: 0.75rem;
+  position: relative;
+  z-index: 1;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+}
+
+.footer-p{
+  margin: 0;
+  padding: 0;
+
+}
+
+.fa-map-marker-alt{
+  padding-left: 2%;
+  padding-right: 0.5%;
+}
