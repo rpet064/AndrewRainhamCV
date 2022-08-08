@@ -3,14 +3,13 @@
 body{
   background-color: #1597E5;
   text-align: center;
-  font-family: "Ubuntu";
+  font-family: 'Open Sans', sans-serif;
   position: relative;
   z-index: -1
 }
 
 h1, h2, h3{
   padding-bottom: 5%;
-  font-family: "EB Garamond";
   font-size: 3rem;
 
 /* Headings */
@@ -56,8 +55,15 @@ h1, h2, h3{
 
 .navbar-brand{
   padding: 3%;
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+}
+
+.navbar-nav, .navbar-toggler{
+  margin-right: 5%;
 
 }
+
 
 /* Introdction */
 
@@ -86,12 +92,7 @@ h1, h2, h3{
   }
 }
 
-
 /* About Me */
-
-#about-me p, #about-me p, #about-me p, #about-me p {
-
-}
 
 .me-p{
   padding-bottom: 7%;
@@ -99,8 +100,9 @@ h1, h2, h3{
 
 /* Call to Action */
 
-.btn{
-  margin-top: 3%;
+#contact-btn{
+  margin-top: 1%;
+  padding: 1.5% 3.25%;
 }
 
 /* Footer */
@@ -110,16 +112,11 @@ h1, h2, h3{
   position: relative;
   z-index: 1;
   padding-top: 1%;
-  padding-bottom: 0.5%;
+  padding-bottom: 0.25%;
 }
 
 .footer-p{
   margin: 0;
-  padding: 0;
+  padding: 0.25%;
 
-}
-
-.fa-map-marker-alt{
-  padding-left: 2%;
-  padding-right: 0.5%;
 }
