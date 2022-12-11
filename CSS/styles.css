@@ -1,0 +1,149 @@
+* body {
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;  
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #CFFF8D;
+  }
+
+  body {
+    min-height: 100vh; 
+    margin: 0; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  container{
+    padding: 1%;
+    margin: 1%;
+    min-height: 10rem;
+  }
+
+  /* global element styling */
+
+button {
+    background-color:#FF8787;
+    color: white;
+}
+  /* Navbar styling */
+
+#navbar {
+    background-color:#A8E890;
+    display: flex;
+    height: 4.5rem;
+}
+
+.intro-icon-container i{
+    color:#FF8787;
+}
+
+#logo{
+    padding-left: 2%;
+    padding-top: 0.5%;
+}
+
+#logo div{
+    display: inline-block;
+    z-index: 1;
+}
+
+#logo h1 a, #logo p a{
+    display: inline-block;
+    color: white;
+    padding: auto;
+}
+
+#logo h1 a{
+    font-size: 2rem;
+    margin-left: 5%;
+}
+
+#logo p a{  
+    font-size: 0.8rem;
+    margin-left: 2%;
+    color: #FF8787;
+    font-weight: bold;
+}
+
+  /* Landing-Section styling */
+
+  #landing{
+    background-color: #CFFF8D;
+  }
+
+  /* About styling */
+
+  #about{
+    background-color: #A8E890;
+  }
+
+  /* Strengths styling */
+
+  #strengths{
+    background-color: #749F82;
+  }
+
+  /* Experience styling */
+
+  #experience{
+    background-color: #A8E890;
+  }
+
+  /* Education styling */
+
+  #education{
+    background-color: #CFFF8D;
+  }
+
+  /* Highlights styling */
+
+  #highlights{
+    background-color: #A8E890;
+  }
+
+  /* Projects styling */
+
+  #projects{
+    background-color: #A8E890;
+  }
+
+  /* CTA styling */
+
+  #cta{
+    background-color: white;
+  }
+
+  /* Footer styling */
+
+  #footer{
+    background-color:#CFFF8D;
+    display: flex;
+    height: 6.75rem;
+    color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+#footer .footer-social-media{
+    flex-grow: 1;
+    margin-top: 0.5%;
+}
+
+#footer .about-app{
+    flex-grow: 1;
+    margin-top: 0.5%;
+
+}
+
+#footer .about-app h4{
+    margin: -2%;
+}
+
+#footer  i{
+    font-size: 1.3rem;
+}
+
