@@ -21,7 +21,7 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Pacifico&family=Roboto&family=Rubik+Gemstones&family=Rubik+Storm&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Pacifico&family=Roboto&family=Rubik+Gemstones&family=Rubik+Storm&family=Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <div id="navbar">
       <div id="logo">
         <div>
-          <h1 class="logoFont0" onclick="logoClick()"><a class="navbar-brand" onclick="logoClick()">AR</a></h1>
+          <h1 id="logo-header" onclick="logoClick()"><a class="navbar-brand">AR</a></h1>
         </div>
         <div>
           <p><a class="navbar-brand" href="">Download CV</a></p>
@@ -204,16 +204,32 @@
   </footer>
 
   <script>
+    // logo easter egg
     let logoCSSTracker = 0;
     function logoClick(){
-      if (logoCSSTracker == 3){
-        document.getElementsByClassName("logoFont3").className = "logoFont";
+      var element = document.getElementById("logo-header");
+      switch (logoCSSTracker) {
+        case 0:
+        logoCSSTracker++;
+        element.style.fontFamily = "Rubik Storm";
+        break;
+        case 1:
+        element.style.fontFamily = "Rubik Gemstones";
+        logoCSSTracker++;
+        break;
+        case 2:
+        element.style.fontFamily = 'Sacramento';
+        logoCSSTracker++;
+        break;
+        case 3:
+        element.style.fontFamily = "Bungee Outline";
+        logoCSSTracker++;
+        break;
+        case 4:
+        element.style.fontFamily = "Pacifico";
         logoCSSTracker = 0;
-      } else {
-        logoCSSTracker++
-        document.getElementsByClassName(`logoFont${logoCSSTracker-1}`).className = `logoFont${logoCSSTracker}`;
+        break;
       }
-      return logoCSSTracker;
     }
   </script>
 

@@ -79,6 +79,7 @@ h3{
 #logo div{
     display: inline-block;
     z-index: 1;
+    font-family: 'Pacifico', cursive !important;
 }
 
 #logo h1 a, #logo p a{
@@ -97,29 +98,11 @@ h3{
     margin-left: 2%;
     color: white;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;  
 }
 
 #logo h1 a:hover, #logo p a:hover{
   color: black;
-}
-
-/* logo easter-egg */
-
-.logoFont0{
-  font-family: 'Pacifico', cursive !important;
-}
-
-.logoFont1{
-  font-family: 'Rubik Storm', cursive;
-}
-
-.logoFont2{
-  font-family: 'Rubik Gemstones', cursive;
-}
-
-.logoFont3{
-  font-family: 'La Belle Aurore', cursive;
-
 }
 
   /* Landing-Section styling */
