@@ -6,7 +6,6 @@
     font-family: 'Roboto', sans-serif;  
     height: 100%;
     scroll-behavior: smooth;
-    background-color: #CFFF8D;
   }
 
   body {
@@ -14,30 +13,67 @@
     margin: 0; 
     display: grid;
     grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
   }
 
   container{
-    padding: 1%;
-    margin: 1%;
+    padding: 5%;
     min-height: 10rem;
+    width: 100%;
+    border-bottom: solid 1px black;
   }
 
   /* global element styling */
 
-button {
-    background-color:#FF8787;
+  p {
+    max-width: 60%;
+    margin: auto;
+    padding: 2%;
+  }
+
+button{
+    background-color:#a1ffa1;
     color: white;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 10%;
 }
+
+button:hover{
+  background-color: orange;
+}
+
+img{
+  position: absolute;
+  z-index: -1;
+}
+
+/* Header styling */
+
+h3{
+  padding-bottom: 2%;
+}
+
+.page-container h1, .page-container h2, .page-container h4, .page-container h5, .page-container h6, .page-containerp{
+  padding: 1%;
+}
+
+.section-header{
+  color: orange;
+}
+
   /* Navbar styling */
 
 #navbar {
-    background-color:#A8E890;
+    background-color:#FF8787;
     display: flex;
     height: 4.5rem;
 }
 
 .intro-icon-container i{
-    color:#FF8787;
+  font-size: 2rem;
+  padding: 0.5%;
 }
 
 #logo{
@@ -64,86 +100,97 @@ button {
 #logo p a{  
     font-size: 0.8rem;
     margin-left: 2%;
-    color: #FF8787;
+    color: white;
     font-weight: bold;
+}
+
+#logo h1 a:hover, #logo p a:hover{
+  color: black;
 }
 
   /* Landing-Section styling */
 
-  #landing{
-    background-color: #CFFF8D;
+  .intro-sub-container{
+    position: relative;
+    right: 200px;
+    top: 30px;
+    padding: 7.75%;
   }
 
   /* About styling */
 
   #about{
-    background-color: #A8E890;
+    background-color:#FEFCF3;
   }
 
   /* Strengths styling */
 
   #strengths{
-    background-color: #749F82;
   }
 
   /* Experience styling */
 
   #experience{
-    background-color: #A8E890;
+    background-color: #F5EBE0;
   }
 
   /* Education styling */
 
   #education{
-    background-color: #CFFF8D;
   }
 
   /* Highlights styling */
 
   #highlights{
-    background-color: #A8E890;
+    background-color: #F5EBE0;
   }
 
   /* Projects styling */
 
   #projects{
-    background-color: #A8E890;
   }
 
   /* CTA styling */
 
   #cta{
-    background-color: white;
+    background-color: #FFE9B1;
   }
 
   /* Footer styling */
 
   #footer{
-    background-color:#CFFF8D;
+    background-color:#ffa1a1;
     display: flex;
-    height: 6.75rem;
+    height: 8rem;
     color: white;
     width: 100%;
-    position: absolute;
-    left: 0;
 }
 
 #footer .footer-social-media{
     flex-grow: 1;
-    margin-top: 0.5%;
+    margin: 0.5%;
+    padding-bottom: 1%;
 }
 
 #footer .about-app{
     flex-grow: 1;
-    margin-top: 0.5%;
-
+    margin: 0.5%;
 }
 
-#footer .about-app h4{
-    margin: -2%;
-}
-
-#footer  i{
+#footer i{
     font-size: 1.3rem;
+    padding-bottom: 2%;
+}
+
+#footer p{
+  padding: 0%;
+}
+
+#footer i:hover{
+  color: black;
+}
+
+#footer h5{
+  padding-top: 1%;
 }
 
