@@ -18,6 +18,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon.ico">
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Pacifico&family=Roboto&family=Rubik+Gemstones&family=Rubik+Storm&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,7 +29,7 @@
     <div id="navbar">
       <div id="logo">
         <div>
-          <h1><a class="navbar-brand" href="">AR</a></h1>
+          <h1 class="logoFont0" onclick="logoClick()"><a class="navbar-brand" onclick="logoClick()">AR</a></h1>
         </div>
         <div>
           <p><a class="navbar-brand" href="">Download CV</a></p>
@@ -198,6 +202,20 @@
       </div>
    </div>
   </footer>
+
+  <script>
+    let logoCSSTracker = 0;
+    function logoClick(){
+      if (logoCSSTracker == 3){
+        document.getElementsByClassName("logoFont3").className = "logoFont";
+        logoCSSTracker = 0;
+      } else {
+        logoCSSTracker++
+        document.getElementsByClassName(`logoFont${logoCSSTracker-1}`).className = `logoFont${logoCSSTracker}`;
+      }
+      return logoCSSTracker;
+    }
+  </script>
 
 </body>
 
