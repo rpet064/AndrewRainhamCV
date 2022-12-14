@@ -21,7 +21,7 @@
     padding: 5%;
     min-height: 10rem;
     width: 100%;
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #D6E4E5;
   }
 
   /* global element styling */
@@ -42,6 +42,7 @@ button{
 
 button:hover{
   background-color: orange;
+  text-shadow: 0.5px 0.5px #ffffff
 }
 
 img{
@@ -51,22 +52,18 @@ img{
 
 /* Header styling */
 
-h3{
-  padding-bottom: 2%;
-}
-
-.page-container h1, .page-container h2, .page-container h4, .page-container h5, .page-container h6, .page-containerp{
-  padding: 1%;
+h3 {
+  padding-bottom: 1.75%;
 }
 
 .section-header{
-  color: orange;
+  color: #DC3535;
 }
 
   /* Navbar styling */
 
 #navbar {
-    background-color:#FF8787;
+    background-color:#E14D2A;
     display: flex;
     height: 4.5rem;
 }
@@ -89,13 +86,12 @@ h3{
 }
 
 #logo h1 a{
-    font-size: 2rem;
-    margin-left: 5%;
+    font-size: 2.5rem;
+    padding-left: 10%;
 }
 
 #logo p a{  
     font-size: 0.8rem;
-    margin-left: 2%;
     color: white;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;  
@@ -123,15 +119,21 @@ h3{
     color: orange;
   }
 
+  #wechat-icon{
+    color: #09B83E;
+  } 
+  
+  .fa-gmail {
+    content: url('../images/gmail.svg');
+    height: 2em;
+    width: auto;
+    z-index: 1;
+  }
+
   /* About styling */
 
   #about{
     background-color:#FEFCF3;
-  }
-
-  /* Strengths styling */
-
-  #strengths{
   }
 
   /* Experience styling */
@@ -140,63 +142,89 @@ h3{
     background-color: #F5EBE0;
   }
 
-  /* Education styling */
-
-  #education{
-  }
-
   /* Highlights styling */
 
   #highlights{
     background-color: #F5EBE0;
   }
 
-  /* Projects styling */
-
-  #projects{
-  }
-
   /* CTA styling */
 
   #cta{
-    background-color: #FFE9B1;
+    background-color:#FEFCF3;
   }
 
   /* Footer styling */
 
   #footer{
-    background-color:#ffa1a1;
+    background-color:#E04D01;
     display: flex;
     height: 8rem;
     color: white;
     width: 100%;
 }
 
-#footer .footer-social-media{
-    flex-grow: 1;
-    margin: 0.5%;
-    padding-bottom: 1%;
-}
-
-#footer .about-app{
-    flex-grow: 1;
-    margin: 0.5%;
+#footer div{
+  flex-grow: 1;
 }
 
 #footer i{
-    font-size: 1.3rem;
-    padding-bottom: 2%;
-}
-
-#footer p{
-  padding: 0%;
+  padding: 3% 0.8%;
+  font-size: 1.5rem;
 }
 
 #footer i:hover{
   color: black;
+  }
+
+#footer p{
+padding: 0%;
 }
 
-#footer h5{
+#footer a{
+  text-decoration: none;
+  color: white;
+}
+
+#footer button{
+  color: white!important;
+  background-color: #E04D01;
+
+}
+
+#footer .footer-middle a:hover{
+  color: black;
+  }
+
+#footer .footer-social-media{
+    margin: 0.5%;
+    padding-bottom: 1%;
+}
+
+#footer .footer-social-media h5{
   padding-top: 1%;
+}
+
+#footer .footer-middle a{
+  font-size: 0.9rem;
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5%;
+}
+
+#footer .footer-middle div{
+  display: inline-block;
+  padding-left: 6%;
+}
+
+#footer .footer-middle h5{
+  padding-top: 2.5%;
+  position: relative;
+  left: 4%;
+}
+
+#footer .about-app{
+    margin: 1%;
 }
 

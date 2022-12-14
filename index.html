@@ -11,11 +11,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <!-- CSS Stylesheets -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="./CSS/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
   <!-- favicon.ico -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.ico">
   <!-- Bootstrap Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <!-- google fonts -->
@@ -27,28 +27,28 @@
 <body>
   <!-- Navbar -->
     <div id="navbar">
-      <div id="logo">
+      <div id="logo" title="Logo">
         <div>
           <h1 id="logo-header" onclick="logoClick()"><a class="navbar-brand">AR</a></h1>
         </div>
         <div>
-          <p><a class="navbar-brand" href="">Download CV</a></p>
+          <p title="download CV"><a class="navbar-brand" href="">Download CV</a></p>
       </div>
       </div>
     </div>
 
   <!-- Introduction -->
   <container id="introduction">
-    <img class="img-title" src="./Images/Mike2.jpg">
+    <img class="img-title" src="">
     <div class="intro-sub-container">
         <div>
           <h1 class="large-heading">Andrew Rainham</h1>
           <h5>Managing Director, Sales Director, Consultant, Football Fanatic</h5>
         </div>
         <div class="intro-icon-container">
-          <i class="far fa-envelope"></i>
-          <i class="fab fa-weixin"></i>
-          <i class="fab fa-linkedin" aria-hidden="true"></i>
+          <a href="mailto: ar.trevez@gmail.com" title="Gmail"><span class="fab icon-gmail fa-2x"></span></a>
+          <i id="wechat-icon" class="fab fa-weixin" title="Wechat"></i>
+          <a href="https://www.linkedin.com/in/andrew-rainham-0759a489/" title="Linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
         </div>
       </div>
     </container>
@@ -66,7 +66,7 @@
       Nam urna sapien, imperdiet nec magna non, blandit placerat odio. 
       Aliquam erat volutpat.
     </p>
-    <button>Get in Touch</button>
+    <button title="Get in touch" onclick="location.href='mailto: ar.trevez@gmail.com>';">Get in Touch</button>
   </container>
 
   <!-- Skills and Strengths -->
@@ -172,8 +172,8 @@
         Aliquam quis purus vel libero pharetra sagittis. 
         Nullam viverra nibh ex, eget hendrerit ante ultrices eu. 
       </p>
-      <button>Get in Touch</button>
-  </container>  
+      <button onclick="location.href='mailto: ar.trevez@gmail.com>';">Get in Touch</button>
+    </container>  
 
   <!-- Footer -->
   <footer id="footer">
@@ -183,11 +183,26 @@
       <h5>Social Media</h5>
       <p class="footer-title"></p>
       <div class="footer-icon-container">
-        <i class="far fa-envelope"></i>
-        <i class="fab fa-weixin"></i>
-        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        <button title="Email" id="footer-emailto-btn" onclick="location.href='mailto: ar.trevez@gmail.com>';"><i class="far fa-envelope"></i></button>
+        <a title="Weixin" href=""></a><i class="fab fa-weixin"></i></a>
+        <a title="Linkedin" href="https://www.linkedin.com/in/andrew-rainham-0759a489/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
       </div>
       <p>©Andrew Rainham <script>new Date().getFullYear()</script></p>
+    </div>
+    
+    <!-- Middle of Footer-->
+    <div class="footer-middle">
+      <h5>Navigation</h5>
+      <div class="row1">
+        <a  title="Introduction" href="#introduction">Introduction</a>
+        <a  title="About" href="#about">About</a>
+        <a  title="Skills" href="#skills">Skills</a>
+      </div>
+      <div class="row2">
+        <a  title="Education" href="#education">Education</a>
+        <a  title="Experience" href="#experience">Experience</a>
+        <a  title="Highlights"  href="#highlights">Highlights</a>
+      </div>
     </div>
 
     <!-- Right side of footer for developer advertising -->
@@ -196,9 +211,9 @@
       <p class="footer-title"></p>
       <p class="footer-p">Created By Robert Pether</p>
       <div class="footer-icon-container">
-        <i class="fab fa-github"><a href="https://github.com/rpet064"></a></i>
-        <i class="fab fa-linkedin" aria-hidden="true"></i>
-        <i class="far fa-envelope"><a href="mailto: rpether@hotmail.co.nz"></a></i>
+        <a title="Github" href="https://github.com/rpet064"><i class="fab fa-github"></i></a>
+        <a title="Linkedin" href="https://www.linkedin.com/in/robert-pether-ba9968113"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a title="Get in touch" href="mailto: rpether@hotmail.co.nz"><i class="far fa-envelope"></i></a>
       </div>
    </div>
   </footer>
@@ -232,7 +247,6 @@
       }
     }
   </script>
-
 </body>
 
 </html>
