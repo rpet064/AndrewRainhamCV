@@ -45,7 +45,7 @@ button:hover{
   text-shadow: 0.5px 0.5px #ffffff
 }
 
-img{
+.img-intro{
   position: absolute;
   z-index: -1;
 }
@@ -140,6 +140,30 @@ h3 {
 
   #experience{
     background-color: #F5EBE0;
+  }
+
+  /* Education Styling */
+  #education{
+    width: 100% !important;
+  }
+
+  #education img{
+    width: 24%;
+    height: 10rem;
+    margin-top: -6%;
+    padding: 0% 2%;
+  }
+
+  #education p{
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    height: 35%;
+  }
+
+  .educaton-massey-div{
+    padding-bottom: 3%;
   }
 
   /* Highlights styling */
