@@ -1,6 +1,10 @@
 # About
 
+Personal website for Andrew Rainham - 
+managing director at Paars NZ Ltd.  
 
-# Functionality
-This Website is made using Font Awesome & Bootstrap Libaries
-HTML & CSS for structure and styling
+
+# Technologies
+
+HTML5, Tailwind CSS, Font-Awesome
+
