@@ -52,10 +52,15 @@ button:hover{
   }
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 /* Header styling */
 
 h3 {
-  padding-bottom: 1.75%;
+  padding: 1.75%;
 }
 
 .section-header{
@@ -118,14 +123,6 @@ h3 {
 
   /* Landing-Section styling */
 
-  .intro-sub-container{
-    position: relative;
-    right: 20%;
-    top: 30px;
-    padding: 7.75%;
-    z-index: 1;
-  }
-
   @media (max-width: 1050px){
     .intro-sub-container{
       right: 7%;
@@ -133,9 +130,16 @@ h3 {
     }
   }
 
-  .img-intro{
-    position: absolute;
-    z-index: -1;
+  .main-img{
+    border-radius: 100%;
+    padding-bottom: 5%;
+  }
+
+  @media (max-width: 1050px) {
+    .main-img{
+      width: 80%;
+      height: 80%;
+    }
   }
 
   .intro-icon-container i{
@@ -228,10 +232,14 @@ h3 {
   #footer{
     background-color:#E04D01;
     display: flex;
-    height: 8rem;
+    height: 10rem;
     color: white;
     width: 100%;
     border-radius: 2%;
+}
+
+#footer h5{
+  font-size: 1.4rem;
 }
 
 #footer div{
@@ -239,59 +247,35 @@ h3 {
 }
 
 #footer i{
-  padding: 3% 0.8%;
+  padding: 2% 0.8%;
   font-size: 1.5rem;
 }
 
-#footer i:hover{
-  color: black;
-  }
-
-#footer p{
-padding: 0%;
-}
-
-#footer a{
-  text-decoration: none;
-  color: white;
-}
-
-@media (max-width: 800px) {
-  #footer i{
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 800px) {
-  #footer h5{
-    margin-top: 5%;
-  }
-}
-
-#footer button{
+#footer .footer-social-media button{
   color: white!important;
   background-color: #E04D01;
+}
+
+#footer .footer-social-media button:hover{
+  color: black;
 }
 
 #footer .footer-middle a:hover{
   color: black;
   }
 
-#footer .footer-social-media{
-    margin: 0.5%;
-    padding-bottom: 1%;
-}
-
 #footer .footer-social-media h5{
-  padding-top: 1%;
+  padding-top: 4.5%;
 }
 
 #footer .footer-middle a{
   font-size: 0.9rem;
   display: block;
-  text-decoration: none;
-  color: white;
-  padding: 0.5%;
+  padding-right: 10%;
+}
+
+#footer .row1, #footer .row2{
+  padding: 1% 2% 1% 4%;
 }
 
 #footer .footer-middle div{
@@ -300,12 +284,16 @@ padding: 0%;
 }
 
 #footer .footer-middle h5{
-  padding-top: 2.5%;
+  padding-top: 4%;
   position: relative;
   left: 4%;
 }
 
-#footer .about-app{
-    margin: 1%;
+#footer .about-app h5{
+  padding-top: 4.5%;
+}
+
+#footer .about-app a{
+  padding: 1%;
 }
 
