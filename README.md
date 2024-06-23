@@ -1,10 +1,7 @@
 # About
 
-Personal website for Andrew Rainham - 
-managing director at Paars NZ Ltd.  
-
+Personal website for Andrew Rainham. Business development consultant. 
 
 # Technologies
 
-HTML5, Tailwind CSS, Font-Awesome
-
+HTML5, Vanilla CSS, Font-Awesome
